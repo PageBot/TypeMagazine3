@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document><pre><code>page = doc[1]
+content = page.select('Content')
+page.name = 'Home'
+page.url = 'index.html'
+
+content = page.select('Content')
+box = content.newBanner()
+
+</code></pre>
+
+<h1>Type Magazine 3</h1>
+<pre><code>box = content.newIntroduction()
+</code></pre>
+
+<p>This issue...</p>
+<pre><code>section = content.newSection()
+box = section.newMain()
+</code></pre>
+
+<p>AAAA</p>
+<pre><code>box = section.newSide()
+</code></pre>
+
+<p>BBB</p></document>
